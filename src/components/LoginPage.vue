@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Đăng nhập</h2>
+    <h2 v-if="!loggedIn">Đăng nhập</h2>
     <form @submit.prevent="login" v-if="!loggedIn">
       <div>
         <label for="username">Tài khoản:</label>
